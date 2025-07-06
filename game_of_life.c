@@ -13,7 +13,7 @@
 #define DEAD ' '
 
 /* Translate the specified x,y grid point into the index int the linear array. 
- * This function implements wrapping, so both negative and positive inddexes coordinates that are out of the grid will wrap around. */
+ * This function implements wrapping, so both negative and positive indexes coordinates that are out of the grid will wrap around. */
 int cell_to_index(int x, int y){
     if(x < 0){
         x = (-x) % GRID_COLS;
