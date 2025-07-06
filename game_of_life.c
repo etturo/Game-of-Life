@@ -65,9 +65,9 @@ void set_grid(char *grid, char state){
 int count_living_neighbors(char *grid, int x, int y){
     return 
         (get_cell(grid, x-1, y) == ALIVE) +         //the WEST neighbor
-        (get_cell(grid, x-1, y-1) == ALIVE) +       //the SUD-WEST neighbor
-        (get_cell(grid, x, y-1) == ALIVE) +         //the SUD neighbor
-        (get_cell(grid, x+1, y-1) == ALIVE) +       //the SUD-EAST neighbor
+        (get_cell(grid, x-1, y-1) == ALIVE) +       //the SOUTH-WEST neighbor
+        (get_cell(grid, x, y-1) == ALIVE) +         //the SOUTH neighbor
+        (get_cell(grid, x+1, y-1) == ALIVE) +       //the SOUTH-EAST neighbor
         (get_cell(grid, x+1, y) == ALIVE) +         //the EAST neighbor
         (get_cell(grid, x+1, y+1) == ALIVE) +       //the NORD-EAST neighbor
         (get_cell(grid, x, y+1) == ALIVE) +         //the NORD neighbor
